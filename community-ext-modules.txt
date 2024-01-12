@@ -349,7 +349,6 @@ salt/modules/zookeeper.py
 salt/modules/zpool.py
 salt/modules/zypperpkg.py
 salt/output/dson.py
-salt/output/json_out.py
 salt/output/newline_values_only.py
 salt/output/no_out_quiet.py
 salt/output/overstatestage.py
