@@ -1,4 +1,4 @@
-This repository contains the lists of modules (as well as states, runners, engines, ect) which will get removed from Salt.
+This repository contains the lists of modules (as well as states, runners, engines, etc) which will get removed from Salt.
 
 A file can fall into one of three categories.
 
