@@ -444,7 +444,6 @@ salt/renderers/json5.py
 salt/renderers/pass.py
 salt/renderers/pydsl.py
 salt/renderers/wempy.py
-salt/renderers/yamlex.py
 salt/returners/appoptics_return.py
 salt/returners/carbon_return.py
 salt/returners/cassandra_cql_return.py
