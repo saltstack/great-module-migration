@@ -307,6 +307,7 @@ salt/states/ntp.py
 salt/states/pip_state.py
 salt/states/pkg.py
 salt/states/pkgbuild.py
+salt/states/process.py
 salt/states/proxy.py
 salt/states/pyenv.py
 salt/states/quota.py
