@@ -247,6 +247,7 @@ salt/runners/reactor.py
 salt/runners/salt.py
 salt/runners/saltutil.py
 salt/runners/sdb.py
+salt/runners/ssh.py
 salt/runners/state.py
 salt/runners/survey.py
 salt/runners/test.py
