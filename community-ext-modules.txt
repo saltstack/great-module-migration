@@ -639,7 +639,6 @@ salt/states/ldap.py
 salt/states/libcloud_dns.py
 salt/states/libcloud_loadbalancer.py
 salt/states/libcloud_storage.py
-salt/states/locale.py
 salt/states/logadm.py
 salt/states/lvs_server.py
 salt/states/lvs_service.py
