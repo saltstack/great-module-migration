@@ -139,6 +139,7 @@ salt/returners/pgjsonb.py
 salt/returners/postgres.py
 salt/returners/postgres_local_cache.py
 salt/states/ansiblegate.py
+salt/states/chocolatey.py
 salt/states/idem.py
 salt/states/pkgng.py
 salt/states/pkgrepo.py

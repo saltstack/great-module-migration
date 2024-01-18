@@ -562,7 +562,6 @@ salt/states/btrfs.py
 salt/states/cabal.py
 salt/states/ceph.py
 salt/states/chef.py
-salt/states/chocolatey.py
 salt/states/chronos_job.py
 salt/states/cimc.py
 salt/states/cisconso.py
