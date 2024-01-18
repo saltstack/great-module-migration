@@ -692,7 +692,6 @@ salt/states/portage_config.py
 salt/states/ports.py
 salt/states/powerpath.py
 salt/states/probes.py
-salt/states/process.py
 salt/states/pushover.py
 salt/states/pyrax_queues.py
 salt/states/rbac_solaris.py
