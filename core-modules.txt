@@ -211,6 +211,7 @@ salt/renderers/pyobjects.py
 salt/renderers/stateconf.py
 salt/renderers/tomlmod.py
 salt/renderers/yaml.py
+salt/renderers/yamlex.py
 salt/returners/highstate_return.py
 salt/returners/local.py
 salt/returners/local_cache.py
