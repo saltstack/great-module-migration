@@ -300,6 +300,7 @@ salt/states/netntp.py
 salt/states/netsnmp.py
 salt/states/netusers.py
 salt/states/network.py
+salt/states/nftables.py
 salt/states/ntp.py
 salt/states/pip_state.py
 salt/states/pkg.py

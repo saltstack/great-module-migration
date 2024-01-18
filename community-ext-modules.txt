@@ -672,7 +672,6 @@ salt/states/neutron_secgroup_rule.py
 salt/states/neutron_subnet.py
 salt/states/nexus.py
 salt/states/nfs_export.py
-salt/states/nftables.py
 salt/states/npm.py
 salt/states/nxos.py
 salt/states/nxos_upgrade.py
