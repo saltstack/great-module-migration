@@ -493,7 +493,6 @@ salt/runners/pagerduty.py
 salt/runners/pkg.py
 salt/runners/smartos_vmadm.py
 salt/runners/spacewalk.py
-salt/runners/ssh.py
 salt/runners/thin.py
 salt/runners/vault.py
 salt/runners/venafiapi.py
