@@ -300,7 +300,6 @@ salt/modules/sensors.py
 salt/modules/serverdensity_device.py
 salt/modules/servicenow.py
 salt/modules/slackware_service.py
-salt/modules/slsutil.py
 salt/modules/smartos_imgadm.py
 salt/modules/smartos_nictagadm.py
 salt/modules/smartos_virt.py
@@ -340,7 +339,6 @@ salt/modules/wordpress.py
 salt/modules/xapi_virt.py
 salt/modules/xbpspkg.py
 salt/modules/xmpp.py
-salt/modules/yaml.py
 salt/modules/zabbix.py
 salt/modules/zcbuildout.py
 salt/modules/zenoss.py
@@ -401,7 +399,6 @@ salt/proxy/arista_pyeapi.py
 salt/proxy/chronos.py
 salt/proxy/cimc.py
 salt/proxy/cisconso.py
-salt/proxy/deltaproxy.py
 salt/proxy/docker.py
 salt/proxy/dummy.py
 salt/proxy/esxcluster.py
@@ -508,7 +505,6 @@ salt/serializers/python.py
 salt/states/acme.py
 salt/states/alias.py
 salt/states/alternatives.py
-salt/states/ansiblegate.py
 salt/states/aptpkg.py
 salt/states/artifactory.py
 salt/states/augeas.py
@@ -648,7 +644,6 @@ salt/states/marathon_app.py
 salt/states/memcached.py
 salt/states/modjk.py
 salt/states/modjk_worker.py
-salt/states/module.py
 salt/states/mongodb_database.py
 salt/states/mongodb_user.py
 salt/states/monit.py

@@ -171,6 +171,7 @@ salt/modules/scp_mod.py
 salt/modules/sdb.py
 salt/modules/seed.py
 salt/modules/selinux.py
+salt/modules/slsutil.py
 salt/modules/smbios.py
 salt/modules/smtp.py
 salt/modules/snapper.py
@@ -199,6 +200,7 @@ salt/modules/x509.py
 salt/modules/x509_v2.py
 salt/modules/xfs.py
 salt/modules/xml.py
+salt/modules/yaml.py
 salt/modules/yumpkg.py
 salt/modules/zfs.py
 salt/output/highstate.py
@@ -214,6 +216,7 @@ salt/pillar/file_tree.py
 salt/pillar/git_pillar.py
 salt/pillar/gpg.py
 salt/pillar/nodegroups.py
+salt/proxy/deltaproxy.py
 salt/renderers/gpg.py
 salt/renderers/jinja.py
 salt/renderers/json.py
@@ -309,6 +312,7 @@ salt/states/lvm.py
 salt/states/makeconf.py
 salt/states/mdadm_raid.py
 salt/states/mount.py
+salt/states/module.py
 salt/states/netacl.py
 salt/states/netconfig.py
 salt/states/netntp.py
