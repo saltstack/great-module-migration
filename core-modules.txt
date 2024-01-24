@@ -19,7 +19,6 @@ salt/beacons/proxy_example.py
 salt/beacons/ps.py
 salt/beacons/salt_monitor.py
 salt/beacons/salt_proxy.py
-salt/beacons/sensehat.py
 salt/beacons/service.py
 salt/beacons/sh.py
 salt/beacons/status.py
