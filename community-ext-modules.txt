@@ -10,6 +10,7 @@ salt/beacons/btmp.py
 salt/beacons/glxinfo.py
 salt/beacons/haproxy.py
 salt/beacons/junos_rre_keys.py
+salt/beacons/napalm_beacon.py
 salt/beacons/sensehat.py
 salt/beacons/smartos_imgadm.py
 salt/beacons/smartos_vmadm.py

@@ -11,7 +11,6 @@ salt/beacons/journald.py
 salt/beacons/load.py
 salt/beacons/log_beacon.py
 salt/beacons/memusage.py
-salt/beacons/napalm_beacon.py
 salt/beacons/network_info.py
 salt/beacons/network_settings.py
 salt/beacons/pkg.py
