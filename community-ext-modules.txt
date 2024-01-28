@@ -273,6 +273,7 @@ salt/modules/openscap.py
 salt/modules/openstack_config.py
 salt/modules/openstack_mng.py
 salt/modules/openvswitch.py
+salt/modules/opkg.py
 salt/modules/opsgenie.py
 salt/modules/pagerduty.py
 salt/modules/pagerduty_util.py

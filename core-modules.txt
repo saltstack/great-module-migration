@@ -125,7 +125,6 @@ salt/modules/nacl.py
 salt/modules/netaddress.py
 salt/modules/network.py
 salt/modules/nftables.py
-salt/modules/opkg.py
 salt/modules/out.py
 salt/modules/pacmanpkg.py
 salt/modules/pam.py
