@@ -93,7 +93,6 @@ salt/modules/git.py
 salt/modules/gpg.py
 salt/modules/grains.py
 salt/modules/groupadd.py
-salt/modules/guestfs.py
 salt/modules/hashutil.py
 salt/modules/highstate_doc.py
 salt/modules/hosts.py

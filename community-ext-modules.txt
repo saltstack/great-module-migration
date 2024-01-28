@@ -191,6 +191,7 @@ salt/modules/gnomedesktop.py
 salt/modules/google_chat.py
 salt/modules/grafana4.py
 salt/modules/grub_legacy.py
+salt/modules/guestfs.py
 salt/modules/hadoop.py
 salt/modules/haproxyconn.py
 salt/modules/heat.py
