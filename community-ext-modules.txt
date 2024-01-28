@@ -294,6 +294,7 @@ salt/modules/purefb.py
 salt/modules/pushbullet.py
 salt/modules/pushover_notify.py
 salt/modules/qemu_img.py
+salt/modules/qemu_nbd.py
 salt/modules/rallydev.py
 salt/modules/random_org.py
 salt/modules/rbenv.py

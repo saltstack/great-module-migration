@@ -138,7 +138,6 @@ salt/modules/publish.py
 salt/modules/pw_group.py
 salt/modules/pw_user.py
 salt/modules/pyenv.py
-salt/modules/qemu_nbd.py
 salt/modules/quota.py
 salt/modules/rabbitmq.py
 salt/modules/rest_pkg.py
