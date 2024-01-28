@@ -315,6 +315,7 @@ salt/modules/smartos_imgadm.py
 salt/modules/smartos_nictagadm.py
 salt/modules/smartos_virt.py
 salt/modules/smartos_vmadm.py
+salt/modules/smtp.py
 salt/modules/solr.py
 salt/modules/solrcloud.py
 salt/modules/splunk.py
@@ -715,6 +716,7 @@ salt/states/rvm.py
 salt/states/serverdensity_device.py
 salt/states/slack.py
 salt/states/smartos.py
+salt/states/smtp.py
 salt/states/snapper.py
 salt/states/solrcloud.py
 salt/states/splunk.py

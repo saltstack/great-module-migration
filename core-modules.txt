@@ -160,7 +160,6 @@ salt/modules/seed.py
 salt/modules/selinux.py
 salt/modules/slsutil.py
 salt/modules/smbios.py
-salt/modules/smtp.py
 salt/modules/snapper.py
 salt/modules/sqlite3.py
 salt/modules/ssh.py
@@ -312,7 +311,6 @@ salt/states/saltutil.py
 salt/states/schedule.py
 salt/states/selinux.py
 salt/states/service.py
-salt/states/smtp.py
 salt/states/ssh_auth.py
 salt/states/ssh_known_hosts.py
 salt/states/stateconf.py
