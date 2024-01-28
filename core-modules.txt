@@ -113,7 +113,6 @@ salt/modules/linux_shadow.py
 salt/modules/linux_sysctl.py
 salt/modules/localemod.py
 salt/modules/locate.py
-salt/modules/logadm.py
 salt/modules/logmod.py
 salt/modules/logrotate.py
 salt/modules/makeconf.py

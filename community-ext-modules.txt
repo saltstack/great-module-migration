@@ -227,6 +227,7 @@ salt/modules/libcloud_compute.py
 salt/modules/libcloud_dns.py
 salt/modules/libcloud_loadbalancer.py
 salt/modules/libcloud_storage.py
+salt/modules/logadm.py
 salt/modules/lvs.py
 salt/modules/lxc.py
 salt/modules/lxd.py
