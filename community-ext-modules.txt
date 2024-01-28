@@ -134,6 +134,7 @@ salt/modules/boto_sns.py
 salt/modules/boto_sqs.py
 salt/modules/boto_ssm.py
 salt/modules/boto_vpc.py
+salt/modules/bower.py
 salt/modules/bsd_shadow.py
 salt/modules/btrfs.py
 salt/modules/cabal.py
@@ -550,6 +551,7 @@ salt/states/boto_secgroup.py
 salt/states/boto_sns.py
 salt/states/boto_sqs.py
 salt/states/boto_vpc.py
+salt/states/bower.py
 salt/states/btrfs.py
 salt/states/cabal.py
 salt/states/ceph.py
@@ -670,6 +672,7 @@ salt/states/neutron_subnet.py
 salt/states/nexus.py
 salt/states/nfs_export.py
 salt/states/nftables.py
+salt/states/npm.py
 salt/states/nxos.py
 salt/states/nxos_upgrade.py
 salt/states/openstack_config.py

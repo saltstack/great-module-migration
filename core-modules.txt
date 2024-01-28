@@ -65,7 +65,6 @@ salt/modules/archive.py
 salt/modules/at.py
 salt/modules/baredoc.py
 salt/modules/beacons.py
-salt/modules/bower.py
 salt/modules/chroot.py
 salt/modules/cloud.py
 salt/modules/cmdmod.py
@@ -274,7 +273,6 @@ salt/states/apache_site.py
 salt/states/archive.py
 salt/states/at.py
 salt/states/beacon.py
-salt/states/bower.py
 salt/states/cloud.py
 salt/states/cmd.py
 salt/states/cron.py
@@ -312,7 +310,6 @@ salt/states/netntp.py
 salt/states/netsnmp.py
 salt/states/netusers.py
 salt/states/network.py
-salt/states/npm.py
 salt/states/ntp.py
 salt/states/pip_state.py
 salt/states/pkg.py
