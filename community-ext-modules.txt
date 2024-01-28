@@ -231,6 +231,7 @@ salt/modules/logadm.py
 salt/modules/lvs.py
 salt/modules/lxc.py
 salt/modules/lxd.py
+salt/modules/makeconf.py
 salt/modules/mandrill.py
 salt/modules/marathon.py
 salt/modules/mattermost.py
@@ -652,6 +653,7 @@ salt/states/mac_keychain.py
 salt/states/mac_xattr.py
 salt/states/macdefaults.py
 salt/states/macpackage.py
+salt/states/makeconf.py
 salt/states/marathon_app.py
 salt/states/memcached.py
 salt/states/modjk.py

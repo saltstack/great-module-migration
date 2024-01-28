@@ -115,7 +115,6 @@ salt/modules/localemod.py
 salt/modules/locate.py
 salt/modules/logmod.py
 salt/modules/logrotate.py
-salt/modules/makeconf.py
 salt/modules/match.py
 salt/modules/mdadm_raid.py
 salt/modules/mine.py
@@ -294,7 +293,6 @@ salt/states/linux_acl.py
 salt/states/logrotate.py
 salt/states/loop.py
 salt/states/lvm.py
-salt/states/makeconf.py
 salt/states/mdadm_raid.py
 salt/states/module.py
 salt/states/mount.py
