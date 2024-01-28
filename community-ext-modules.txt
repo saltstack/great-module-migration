@@ -848,7 +848,6 @@ tests/integration/modules/test_mine.py
 tests/integration/modules/test_mysql.py
 tests/integration/modules/test_publish.py
 tests/integration/modules/test_pw_user.py
-tests/integration/modules/test_rabbitmq.py
 tests/integration/modules/test_saltcheck.py
 tests/integration/modules/test_ssh.py
 tests/integration/modules/test_status.py
@@ -920,8 +919,6 @@ tests/integration/states/test_match.py
 tests/integration/states/test_mysql_database.py
 tests/integration/states/test_mysql_grants.py
 tests/integration/states/test_network.py
-tests/integration/states/test_rabbitmq_user.py
-tests/integration/states/test_rabbitmq_vhost.py
 tests/integration/states/test_reg.py
 tests/integration/states/test_renderers.py
 tests/integration/states/test_ssh_auth.py
@@ -1144,14 +1141,6 @@ tests/pytests/functional/states/file/test_uncomment.py
 tests/pytests/functional/states/pkgrepo/__init__.py
 tests/pytests/functional/states/pkgrepo/test_centos.py
 tests/pytests/functional/states/pkgrepo/test_debian.py
-tests/pytests/functional/states/rabbitmq/__init__.py
-tests/pytests/functional/states/rabbitmq/conftest.py
-tests/pytests/functional/states/rabbitmq/test_cluster.py
-tests/pytests/functional/states/rabbitmq/test_plugin.py
-tests/pytests/functional/states/rabbitmq/test_policy.py
-tests/pytests/functional/states/rabbitmq/test_upstream.py
-tests/pytests/functional/states/rabbitmq/test_user.py
-tests/pytests/functional/states/rabbitmq/test_vhost.py
 tests/pytests/functional/states/test_archive.py
 tests/pytests/functional/states/test_chocolatey_1_2_1.py
 tests/pytests/functional/states/test_chocolatey_latest.py
@@ -1805,7 +1794,6 @@ tests/pytests/unit/modules/test_pw_user.py
 tests/pytests/unit/modules/test_pyenv.py
 tests/pytests/unit/modules/test_qemu_img.py
 tests/pytests/unit/modules/test_qemu_nbd.py
-tests/pytests/unit/modules/test_rabbitmq.py
 tests/pytests/unit/modules/test_rbenv.py
 tests/pytests/unit/modules/test_rdp.py
 tests/pytests/unit/modules/test_rebootmgr.py
@@ -2096,11 +2084,6 @@ tests/pytests/unit/states/postgresql/test_language.py
 tests/pytests/unit/states/postgresql/test_privileges.py
 tests/pytests/unit/states/postgresql/test_schema.py
 tests/pytests/unit/states/postgresql/test_user.py
-tests/pytests/unit/states/rabbitmq/__init__.py
-tests/pytests/unit/states/rabbitmq/test_cluster.py
-tests/pytests/unit/states/rabbitmq/test_plugin.py
-tests/pytests/unit/states/rabbitmq/test_policy.py
-tests/pytests/unit/states/rabbitmq/test_vhost.py
 tests/pytests/unit/states/saltmod/__init__.py
 tests/pytests/unit/states/saltmod/test_function.py
 tests/pytests/unit/states/saltmod/test_parallel_runners.py

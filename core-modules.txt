@@ -139,7 +139,6 @@ salt/modules/pw_group.py
 salt/modules/pw_user.py
 salt/modules/pyenv.py
 salt/modules/quota.py
-salt/modules/rabbitmq.py
 salt/modules/rest_pkg.py
 salt/modules/rest_sample_utils.py
 salt/modules/rest_service.py
