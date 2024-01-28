@@ -187,7 +187,6 @@ salt/modules/sysmod.py
 salt/modules/system.py
 salt/modules/temp.py
 salt/modules/test.py
-salt/modules/test_virtual.py
 salt/modules/textfsm_mod.py
 salt/modules/timezone.py
 salt/modules/tls.py
