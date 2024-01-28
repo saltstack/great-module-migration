@@ -63,7 +63,6 @@ salt/modules/apf.py
 salt/modules/aptpkg.py
 salt/modules/archive.py
 salt/modules/at.py
-salt/modules/aws_sqs.py
 salt/modules/baredoc.py
 salt/modules/beacons.py
 salt/modules/bower.py
@@ -274,7 +273,6 @@ salt/states/apache_module.py
 salt/states/apache_site.py
 salt/states/archive.py
 salt/states/at.py
-salt/states/aws_sqs.py
 salt/states/beacon.py
 salt/states/bower.py
 salt/states/cloud.py

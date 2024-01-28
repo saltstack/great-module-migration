@@ -96,6 +96,7 @@ salt/modules/apcups.py
 salt/modules/apkpkg.py
 salt/modules/aptly.py
 salt/modules/augeas_cfg.py
+salt/modules/aws_sqs.py
 salt/modules/bamboohr.py
 salt/modules/bigip.py
 salt/modules/bluez_bluetooth.py
@@ -512,6 +513,7 @@ salt/states/alternatives.py
 salt/states/aptpkg.py
 salt/states/artifactory.py
 salt/states/augeas.py
+salt/states/aws_sqs.py
 salt/states/bigip.py
 salt/states/blockdev.py
 salt/states/boto3_elasticache.py
@@ -1843,7 +1845,6 @@ tests/pytests/unit/modules/test_systemd_service.py
 tests/pytests/unit/modules/test_telegram.py
 tests/pytests/unit/modules/test_timezone.py
 tests/pytests/unit/modules/test_tls.py
-tests/pytests/unit/modules/test_transactional_update.py
 tests/pytests/unit/modules/test_transactional_update.py
 tests/pytests/unit/modules/test_tuned.py
 tests/pytests/unit/modules/test_udev.py
