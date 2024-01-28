@@ -32,7 +32,6 @@ salt/engines/webhook.py
 salt/executors/direct_call.py
 salt/executors/splay.py
 salt/executors/sudo.py
-salt/executors/transactional_update.py
 salt/fileserver/gitfs.py
 salt/fileserver/minionfs.py
 salt/fileserver/roots.py
@@ -188,7 +187,6 @@ salt/modules/test.py
 salt/modules/textfsm_mod.py
 salt/modules/timezone.py
 salt/modules/tls.py
-salt/modules/transactional_update.py
 salt/modules/udev.py
 salt/modules/useradd.py
 salt/modules/virtualenv_mod.py

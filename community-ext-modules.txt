@@ -63,6 +63,7 @@ salt/engines/slack_bolt_engine.py
 salt/engines/sqs_events.py
 salt/engines/stalekey.py
 salt/executors/docker.py
+salt/executors/transactional_update.py
 salt/fileserver/hgfs.py
 salt/fileserver/s3fs.py
 salt/fileserver/svnfs.py
@@ -324,6 +325,7 @@ salt/modules/telemetry.py
 salt/modules/testinframod.py
 salt/modules/tomcat.py
 salt/modules/trafficserver.py
+salt/modules/transactional_update.py
 salt/modules/travisci.py
 salt/modules/tuned.py
 salt/modules/twilio_notify.py
@@ -1841,6 +1843,7 @@ tests/pytests/unit/modules/test_systemd_service.py
 tests/pytests/unit/modules/test_telegram.py
 tests/pytests/unit/modules/test_timezone.py
 tests/pytests/unit/modules/test_tls.py
+tests/pytests/unit/modules/test_transactional_update.py
 tests/pytests/unit/modules/test_transactional_update.py
 tests/pytests/unit/modules/test_tuned.py
 tests/pytests/unit/modules/test_udev.py
