@@ -206,6 +206,7 @@ salt/modules/infoblox.py
 salt/modules/inspectlib
 salt/modules/inspector.py
 salt/modules/introspect.py
+salt/modules/ipmi.py
 salt/modules/jboss7.py
 salt/modules/jboss7_cli.py
 salt/modules/jenkinsmod.py
@@ -613,6 +614,7 @@ salt/states/infoblox_a.py
 salt/states/infoblox_cname.py
 salt/states/infoblox_host_record.py
 salt/states/infoblox_range.py
+salt/states/ipmi.py
 salt/states/jboss7.py
 salt/states/jenkins.py
 salt/states/junos.py

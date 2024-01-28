@@ -98,7 +98,6 @@ salt/modules/highstate_doc.py
 salt/modules/hosts.py
 salt/modules/http.py
 salt/modules/ini_manage.py
-salt/modules/ipmi.py
 salt/modules/ipset.py
 salt/modules/iptables.py
 salt/modules/iwtools.py
@@ -289,7 +288,6 @@ salt/states/highstate_doc.py
 salt/states/host.py
 salt/states/http.py
 salt/states/ini_manage.py
-salt/states/ipmi.py
 salt/states/ipset.py
 salt/states/iptables.py
 salt/states/keyboard.py
