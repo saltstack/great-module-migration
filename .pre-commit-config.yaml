@@ -6,8 +6,15 @@ repos:
       - id: trailing-whitespace
       - id: end-of-file-fixer
       - id: mixed-line-ending
-      - id: file-contents-sorter
+
+  - repo: https://github.com/s0undt3ch/python-tools-scripts
+    rev: "0.18.6"
+    hooks:
+      - id: tools
+        alias: cleanup-duplicates
+        name: Fix duplicate entries and sort files
+        pass_filenames: false
         files: ^.*\.txt
         args:
-          - --ignore-case
-          - --unique
+          - pre-commit
+          - cleanup-duplicates
