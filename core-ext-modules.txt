@@ -23,6 +23,7 @@ salt/modules/debuild_pkgbuild.py
 salt/modules/dockercompose.py
 salt/modules/dockermod.py
 salt/modules/etcd_mod.py
+salt/modules/idem.py
 salt/modules/incron.py
 salt/modules/iosconfig.py
 salt/modules/junos.py
@@ -138,6 +139,7 @@ salt/returners/pgjsonb.py
 salt/returners/postgres.py
 salt/returners/postgres_local_cache.py
 salt/states/ansiblegate.py
+salt/states/idem.py
 salt/states/pkgng.py
 salt/states/pkgrepo.py
 salt/states/postgres_cluster.py

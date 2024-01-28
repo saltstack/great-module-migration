@@ -97,7 +97,6 @@ salt/modules/hashutil.py
 salt/modules/highstate_doc.py
 salt/modules/hosts.py
 salt/modules/http.py
-salt/modules/idem.py
 salt/modules/ini_manage.py
 salt/modules/ipmi.py
 salt/modules/ipset.py
@@ -289,7 +288,6 @@ salt/states/group.py
 salt/states/highstate_doc.py
 salt/states/host.py
 salt/states/http.py
-salt/states/idem.py
 salt/states/ini_manage.py
 salt/states/ipmi.py
 salt/states/ipset.py
