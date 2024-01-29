@@ -186,7 +186,6 @@ salt/modules/xfs.py
 salt/modules/xml.py
 salt/modules/yaml.py
 salt/modules/yumpkg.py
-salt/modules/zfs.py
 salt/output/highstate.py
 salt/output/json_out.py
 salt/output/key.py

@@ -1,6 +1,5 @@
 salt/auth/ldap.py
 salt/grains/rest_sample.py
-salt/grains/zfs.py
 salt/modules/aix_group.py
 salt/modules/aix_shadow.py
 salt/modules/aixpkg.py
@@ -182,7 +181,6 @@ salt/states/win_system.py
 salt/states/win_wua.py
 salt/states/win_wusa.py
 salt/states/winrepo.py
-salt/states/zfs.py
 tests/integration/modules/test_rabbitmq.py
 tests/integration/states/test_rabbitmq_user.py
 tests/integration/states/test_rabbitmq_vhost.py

@@ -87,6 +87,7 @@ salt/grains/panos.py
 salt/grains/philips_hue.py
 salt/grains/smartos.py
 salt/grains/ssh_sample.py
+salt/grains/zfs.py
 salt/log_handlers/fluent_mod.py
 salt/log_handlers/log4mongo_mod.py
 salt/log_handlers/logstash_mod.py
@@ -355,6 +356,7 @@ salt/modules/xmpp.py
 salt/modules/zabbix.py
 salt/modules/zcbuildout.py
 salt/modules/zenoss.py
+salt/modules/zfs.py
 salt/modules/znc.py
 salt/modules/zookeeper.py
 salt/modules/zpool.py
@@ -750,6 +752,7 @@ salt/states/zabbix_usermacro.py
 salt/states/zabbix_valuemap.py
 salt/states/zcbuildout.py
 salt/states/zenoss.py
+salt/states/zfs.py
 salt/states/zk_concurrency.py
 salt/states/zone.py
 salt/states/zookeeper.py
