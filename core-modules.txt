@@ -208,6 +208,7 @@ salt/renderers/mako.py
 salt/renderers/msgpack.py
 salt/renderers/nacl.py
 salt/renderers/py.py
+salt/renderers/pyobjects.py
 salt/renderers/stateconf.py
 salt/renderers/tomlmod.py
 salt/renderers/yaml.py
@@ -326,3 +327,6 @@ salt/states/uptime.py
 salt/states/user.py
 salt/states/x509.py
 salt/states/x509_v2.py
+tests/pytests/functional/modules/state/test_pyobjects_renderer.py
+tests/pytests/unit/utils/test_pyobjects.py
+tests/unit/utils/test_pyobjects.py

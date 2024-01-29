@@ -441,7 +441,6 @@ salt/renderers/hjson.py
 salt/renderers/json5.py
 salt/renderers/pass.py
 salt/renderers/pydsl.py
-salt/renderers/pyobjects.py
 salt/renderers/wempy.py
 salt/renderers/yamlex.py
 salt/returners/appoptics_return.py
@@ -1013,7 +1012,6 @@ tests/pytests/functional/modules/state/requisites/test_watch.py
 tests/pytests/functional/modules/state/test_jinja_filters.py
 tests/pytests/functional/modules/state/test_jinja_renderer.py
 tests/pytests/functional/modules/state/test_mako_renderer.py
-tests/pytests/functional/modules/state/test_pyobjects_renderer.py
 tests/pytests/functional/modules/state/test_state.py
 tests/pytests/functional/modules/test_aliases.py
 tests/pytests/functional/modules/test_ansiblegate.py
@@ -2367,7 +2365,6 @@ tests/pytests/unit/utils/test_package.py
 tests/pytests/unit/utils/test_pkg.py
 tests/pytests/unit/utils/test_platform.py
 tests/pytests/unit/utils/test_pycrypto.py
-tests/pytests/unit/utils/test_pyobjects.py
 tests/pytests/unit/utils/test_reactor.py
 tests/pytests/unit/utils/test_rsax931.py
 tests/pytests/unit/utils/test_schedule.py
@@ -2608,7 +2605,6 @@ tests/unit/utils/test_pkg.py
 tests/unit/utils/test_process.py
 tests/unit/utils/test_proxy.py
 tests/unit/utils/test_pydsl.py
-tests/unit/utils/test_pyobjects.py
 tests/unit/utils/test_reactor.py
 tests/unit/utils/test_roster_matcher.py
 tests/unit/utils/test_sanitizers.py
