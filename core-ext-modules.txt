@@ -146,7 +146,6 @@ salt/states/mac_keychain.py
 salt/states/mac_xattr.py
 salt/states/macdefaults.py
 salt/states/macpackage.py
-salt/states/makeconf.py
 salt/states/pkgng.py
 salt/states/pkgrepo.py
 salt/states/postgres_cluster.py
