@@ -2,11 +2,14 @@ This repository contains the lists of modules (as well as states, runners, engin
 
 A file can fall into one of three categories.
 
-1. Files that are core to Salt and will remain in the Salt codebase
-2. Files that will be moved out of the Salt codebase but continue to be maintained by the Salt Core Team
-3. Files that will be moved out into a dump repository and will no longer be maintained by the Salt Core Team
+1. Files that are core to Salt and will remain in the Salt codebase (core-modules.txt)
+2. Files that will be moved out of the Salt codebase but continue to be maintained by the Salt Core Team (core-ext-modules.txt)
+3. Files that will be moved out into a dump repository and will no longer be maintained by the Salt Core Team (community-ext-modules.txt)
 4. Files which serve no purpose on Salt's runtime, for example, test related files, which can and should be created when
-   running the test suite, if need be.
+   running the test suite, if need be. (delete-modules.txt)
+5. Files that are needed for for the test suite, these are things we want
+   remain in the salt codebase but also want to preserve community extensions
+   dump repository (test-support.txt)
 
 We'll use `git filter-repo` to migrate modules to a separate repositoy while
 retaining their git history. Once the migration has taken place, we'll do a
@@ -31,7 +34,7 @@ git filter-repo --dry --paths-from-file=$FILESDIR/community-ext-modules.txt
 If eveything looks good... Send it!
 
 ```
-git filter-repo --paths-from-file=$FILESDIR/community-ext-modules.txt
+git filter-repo --paths-from-file=$FILESDIR/community-ext-modules.txt --paths-from-file=$FILESDIR/test-support.txt
 ```
 
 Now we can remove the migrated files from the salt repo.
