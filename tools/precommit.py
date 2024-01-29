@@ -44,10 +44,10 @@ def cleanup_duplicates(ctx: Context):
         if mod in core_modules:
             core_modules.remove(mod)
 
-    delete_modules = sorted(delete_modules, key=str.casefold)
-    community_modules = sorted(community_modules, key=str.casefold)
-    core_ext_modules = sorted(core_ext_modules, key=str.casefold)
-    core_modules = sorted(core_modules, key=str.casefold)
+    delete_modules = sorted(set(m for m in delete_modules if m), key=str.casefold)
+    community_modules = sorted(set(m for m in community_modules if m), key=str.casefold)
+    core_ext_modules = sorted(set(m for m in core_ext_modules if m), key=str.casefold)
+    core_modules = sorted(set(m for m in core_modules if m), key=str.casefold)
     if delete_modules != initial_delete_modules:
         ctx.info(f"Writing updated {delete_modules_path} ...")
         delete_modules_path.write_text("\n".join(delete_modules) + "\n")

@@ -10,6 +10,8 @@ salt/beacons/btmp.py
 salt/beacons/glxinfo.py
 salt/beacons/haproxy.py
 salt/beacons/junos_rre_keys.py
+salt/beacons/napalm_beacon.py
+salt/beacons/sensehat.py
 salt/beacons/smartos_imgadm.py
 salt/beacons/smartos_vmadm.py
 salt/beacons/telegram_bot_msg.py
@@ -61,6 +63,7 @@ salt/engines/slack_bolt_engine.py
 salt/engines/sqs_events.py
 salt/engines/stalekey.py
 salt/executors/docker.py
+salt/executors/transactional_update.py
 salt/fileserver/hgfs.py
 salt/fileserver/s3fs.py
 salt/fileserver/svnfs.py
@@ -84,6 +87,7 @@ salt/grains/panos.py
 salt/grains/philips_hue.py
 salt/grains/smartos.py
 salt/grains/ssh_sample.py
+salt/grains/zfs.py
 salt/log_handlers/fluent_mod.py
 salt/log_handlers/log4mongo_mod.py
 salt/log_handlers/logstash_mod.py
@@ -93,6 +97,7 @@ salt/modules/apcups.py
 salt/modules/apkpkg.py
 salt/modules/aptly.py
 salt/modules/augeas_cfg.py
+salt/modules/aws_sqs.py
 salt/modules/bamboohr.py
 salt/modules/bigip.py
 salt/modules/bluez_bluetooth.py
@@ -130,6 +135,7 @@ salt/modules/boto_sns.py
 salt/modules/boto_sqs.py
 salt/modules/boto_ssm.py
 salt/modules/boto_vpc.py
+salt/modules/bower.py
 salt/modules/bsd_shadow.py
 salt/modules/btrfs.py
 salt/modules/cabal.py
@@ -186,6 +192,7 @@ salt/modules/gnomedesktop.py
 salt/modules/google_chat.py
 salt/modules/grafana4.py
 salt/modules/grub_legacy.py
+salt/modules/guestfs.py
 salt/modules/hadoop.py
 salt/modules/haproxyconn.py
 salt/modules/heat.py
@@ -200,6 +207,7 @@ salt/modules/infoblox.py
 salt/modules/inspectlib
 salt/modules/inspector.py
 salt/modules/introspect.py
+salt/modules/ipmi.py
 salt/modules/jboss7.py
 salt/modules/jboss7_cli.py
 salt/modules/jenkinsmod.py
@@ -220,9 +228,11 @@ salt/modules/libcloud_compute.py
 salt/modules/libcloud_dns.py
 salt/modules/libcloud_loadbalancer.py
 salt/modules/libcloud_storage.py
+salt/modules/logadm.py
 salt/modules/lvs.py
 salt/modules/lxc.py
 salt/modules/lxd.py
+salt/modules/makeconf.py
 salt/modules/mandrill.py
 salt/modules/marathon.py
 salt/modules/mattermost.py
@@ -264,6 +274,7 @@ salt/modules/openscap.py
 salt/modules/openstack_config.py
 salt/modules/openstack_mng.py
 salt/modules/openvswitch.py
+salt/modules/opkg.py
 salt/modules/opsgenie.py
 salt/modules/pagerduty.py
 salt/modules/pagerduty_util.py
@@ -284,6 +295,7 @@ salt/modules/purefb.py
 salt/modules/pushbullet.py
 salt/modules/pushover_notify.py
 salt/modules/qemu_img.py
+salt/modules/qemu_nbd.py
 salt/modules/rallydev.py
 salt/modules/random_org.py
 salt/modules/rbenv.py
@@ -304,6 +316,7 @@ salt/modules/smartos_imgadm.py
 salt/modules/smartos_nictagadm.py
 salt/modules/smartos_virt.py
 salt/modules/smartos_vmadm.py
+salt/modules/smtp.py
 salt/modules/solr.py
 salt/modules/solrcloud.py
 salt/modules/splunk.py
@@ -322,6 +335,7 @@ salt/modules/telemetry.py
 salt/modules/testinframod.py
 salt/modules/tomcat.py
 salt/modules/trafficserver.py
+salt/modules/transactional_update.py
 salt/modules/travisci.py
 salt/modules/tuned.py
 salt/modules/twilio_notify.py
@@ -342,6 +356,7 @@ salt/modules/xmpp.py
 salt/modules/zabbix.py
 salt/modules/zcbuildout.py
 salt/modules/zenoss.py
+salt/modules/zfs.py
 salt/modules/znc.py
 salt/modules/zookeeper.py
 salt/modules/zpool.py
@@ -428,7 +443,6 @@ salt/renderers/hjson.py
 salt/renderers/json5.py
 salt/renderers/pass.py
 salt/renderers/pydsl.py
-salt/renderers/pyobjects.py
 salt/renderers/wempy.py
 salt/renderers/yamlex.py
 salt/returners/appoptics_return.py
@@ -508,6 +522,7 @@ salt/states/alternatives.py
 salt/states/aptpkg.py
 salt/states/artifactory.py
 salt/states/augeas.py
+salt/states/aws_sqs.py
 salt/states/bigip.py
 salt/states/blockdev.py
 salt/states/boto3_elasticache.py
@@ -544,6 +559,7 @@ salt/states/boto_secgroup.py
 salt/states/boto_sns.py
 salt/states/boto_sqs.py
 salt/states/boto_vpc.py
+salt/states/bower.py
 salt/states/btrfs.py
 salt/states/cabal.py
 salt/states/ceph.py
@@ -604,6 +620,7 @@ salt/states/infoblox_a.py
 salt/states/infoblox_cname.py
 salt/states/infoblox_host_record.py
 salt/states/infoblox_range.py
+salt/states/ipmi.py
 salt/states/jboss7.py
 salt/states/jenkins.py
 salt/states/junos.py
@@ -640,6 +657,7 @@ salt/states/mac_keychain.py
 salt/states/mac_xattr.py
 salt/states/macdefaults.py
 salt/states/macpackage.py
+salt/states/makeconf.py
 salt/states/marathon_app.py
 salt/states/memcached.py
 salt/states/modjk.py
@@ -664,6 +682,7 @@ salt/states/neutron_subnet.py
 salt/states/nexus.py
 salt/states/nfs_export.py
 salt/states/nftables.py
+salt/states/npm.py
 salt/states/nxos.py
 salt/states/nxos_upgrade.py
 salt/states/openstack_config.py
@@ -698,6 +717,7 @@ salt/states/rvm.py
 salt/states/serverdensity_device.py
 salt/states/slack.py
 salt/states/smartos.py
+salt/states/smtp.py
 salt/states/snapper.py
 salt/states/solrcloud.py
 salt/states/splunk.py
@@ -732,6 +752,7 @@ salt/states/zabbix_usermacro.py
 salt/states/zabbix_valuemap.py
 salt/states/zcbuildout.py
 salt/states/zenoss.py
+salt/states/zfs.py
 salt/states/zk_concurrency.py
 salt/states/zone.py
 salt/states/zookeeper.py
@@ -831,7 +852,6 @@ tests/integration/modules/test_mine.py
 tests/integration/modules/test_mysql.py
 tests/integration/modules/test_publish.py
 tests/integration/modules/test_pw_user.py
-tests/integration/modules/test_rabbitmq.py
 tests/integration/modules/test_saltcheck.py
 tests/integration/modules/test_ssh.py
 tests/integration/modules/test_status.py
@@ -903,8 +923,6 @@ tests/integration/states/test_match.py
 tests/integration/states/test_mysql_database.py
 tests/integration/states/test_mysql_grants.py
 tests/integration/states/test_network.py
-tests/integration/states/test_rabbitmq_user.py
-tests/integration/states/test_rabbitmq_vhost.py
 tests/integration/states/test_reg.py
 tests/integration/states/test_renderers.py
 tests/integration/states/test_ssh_auth.py
@@ -997,7 +1015,6 @@ tests/pytests/functional/modules/state/requisites/test_watch.py
 tests/pytests/functional/modules/state/test_jinja_filters.py
 tests/pytests/functional/modules/state/test_jinja_renderer.py
 tests/pytests/functional/modules/state/test_mako_renderer.py
-tests/pytests/functional/modules/state/test_pyobjects_renderer.py
 tests/pytests/functional/modules/state/test_state.py
 tests/pytests/functional/modules/test_aliases.py
 tests/pytests/functional/modules/test_ansiblegate.py
@@ -1127,14 +1144,6 @@ tests/pytests/functional/states/file/test_uncomment.py
 tests/pytests/functional/states/pkgrepo/__init__.py
 tests/pytests/functional/states/pkgrepo/test_centos.py
 tests/pytests/functional/states/pkgrepo/test_debian.py
-tests/pytests/functional/states/rabbitmq/__init__.py
-tests/pytests/functional/states/rabbitmq/conftest.py
-tests/pytests/functional/states/rabbitmq/test_cluster.py
-tests/pytests/functional/states/rabbitmq/test_plugin.py
-tests/pytests/functional/states/rabbitmq/test_policy.py
-tests/pytests/functional/states/rabbitmq/test_upstream.py
-tests/pytests/functional/states/rabbitmq/test_user.py
-tests/pytests/functional/states/rabbitmq/test_vhost.py
 tests/pytests/functional/states/test_archive.py
 tests/pytests/functional/states/test_chocolatey_1_2_1.py
 tests/pytests/functional/states/test_chocolatey_latest.py
@@ -1788,7 +1797,6 @@ tests/pytests/unit/modules/test_pw_user.py
 tests/pytests/unit/modules/test_pyenv.py
 tests/pytests/unit/modules/test_qemu_img.py
 tests/pytests/unit/modules/test_qemu_nbd.py
-tests/pytests/unit/modules/test_rabbitmq.py
 tests/pytests/unit/modules/test_rbenv.py
 tests/pytests/unit/modules/test_rdp.py
 tests/pytests/unit/modules/test_rebootmgr.py
@@ -2079,11 +2087,6 @@ tests/pytests/unit/states/postgresql/test_language.py
 tests/pytests/unit/states/postgresql/test_privileges.py
 tests/pytests/unit/states/postgresql/test_schema.py
 tests/pytests/unit/states/postgresql/test_user.py
-tests/pytests/unit/states/rabbitmq/__init__.py
-tests/pytests/unit/states/rabbitmq/test_cluster.py
-tests/pytests/unit/states/rabbitmq/test_plugin.py
-tests/pytests/unit/states/rabbitmq/test_policy.py
-tests/pytests/unit/states/rabbitmq/test_vhost.py
 tests/pytests/unit/states/saltmod/__init__.py
 tests/pytests/unit/states/saltmod/test_function.py
 tests/pytests/unit/states/saltmod/test_parallel_runners.py
@@ -2365,7 +2368,6 @@ tests/pytests/unit/utils/test_package.py
 tests/pytests/unit/utils/test_pkg.py
 tests/pytests/unit/utils/test_platform.py
 tests/pytests/unit/utils/test_pycrypto.py
-tests/pytests/unit/utils/test_pyobjects.py
 tests/pytests/unit/utils/test_reactor.py
 tests/pytests/unit/utils/test_rsax931.py
 tests/pytests/unit/utils/test_schedule.py
@@ -2606,7 +2608,6 @@ tests/unit/utils/test_pkg.py
 tests/unit/utils/test_process.py
 tests/unit/utils/test_proxy.py
 tests/unit/utils/test_pydsl.py
-tests/unit/utils/test_pyobjects.py
 tests/unit/utils/test_reactor.py
 tests/unit/utils/test_roster_matcher.py
 tests/unit/utils/test_sanitizers.py

@@ -11,7 +11,6 @@ salt/beacons/journald.py
 salt/beacons/load.py
 salt/beacons/log_beacon.py
 salt/beacons/memusage.py
-salt/beacons/napalm_beacon.py
 salt/beacons/network_info.py
 salt/beacons/network_settings.py
 salt/beacons/pkg.py
@@ -19,7 +18,6 @@ salt/beacons/proxy_example.py
 salt/beacons/ps.py
 salt/beacons/salt_monitor.py
 salt/beacons/salt_proxy.py
-salt/beacons/sensehat.py
 salt/beacons/service.py
 salt/beacons/sh.py
 salt/beacons/status.py
@@ -34,7 +32,6 @@ salt/engines/webhook.py
 salt/executors/direct_call.py
 salt/executors/splay.py
 salt/executors/sudo.py
-salt/executors/transactional_update.py
 salt/fileserver/gitfs.py
 salt/fileserver/minionfs.py
 salt/fileserver/roots.py
@@ -66,10 +63,8 @@ salt/modules/apf.py
 salt/modules/aptpkg.py
 salt/modules/archive.py
 salt/modules/at.py
-salt/modules/aws_sqs.py
 salt/modules/baredoc.py
 salt/modules/beacons.py
-salt/modules/bower.py
 salt/modules/chroot.py
 salt/modules/cloud.py
 salt/modules/cmdmod.py
@@ -98,14 +93,11 @@ salt/modules/git.py
 salt/modules/gpg.py
 salt/modules/grains.py
 salt/modules/groupadd.py
-salt/modules/guestfs.py
 salt/modules/hashutil.py
 salt/modules/highstate_doc.py
 salt/modules/hosts.py
 salt/modules/http.py
-salt/modules/idem.py
 salt/modules/ini_manage.py
-salt/modules/ipmi.py
 salt/modules/ipset.py
 salt/modules/iptables.py
 salt/modules/iwtools.py
@@ -121,10 +113,8 @@ salt/modules/linux_shadow.py
 salt/modules/linux_sysctl.py
 salt/modules/localemod.py
 salt/modules/locate.py
-salt/modules/logadm.py
 salt/modules/logmod.py
 salt/modules/logrotate.py
-salt/modules/makeconf.py
 salt/modules/match.py
 salt/modules/mdadm_raid.py
 salt/modules/mine.py
@@ -135,7 +125,6 @@ salt/modules/nacl.py
 salt/modules/netaddress.py
 salt/modules/network.py
 salt/modules/nftables.py
-salt/modules/opkg.py
 salt/modules/out.py
 salt/modules/pacmanpkg.py
 salt/modules/pam.py
@@ -149,9 +138,7 @@ salt/modules/publish.py
 salt/modules/pw_group.py
 salt/modules/pw_user.py
 salt/modules/pyenv.py
-salt/modules/qemu_nbd.py
 salt/modules/quota.py
-salt/modules/rabbitmq.py
 salt/modules/rest_pkg.py
 salt/modules/rest_sample_utils.py
 salt/modules/rest_service.py
@@ -173,7 +160,6 @@ salt/modules/seed.py
 salt/modules/selinux.py
 salt/modules/slsutil.py
 salt/modules/smbios.py
-salt/modules/smtp.py
 salt/modules/snapper.py
 salt/modules/sqlite3.py
 salt/modules/ssh.py
@@ -190,7 +176,6 @@ salt/modules/test.py
 salt/modules/textfsm_mod.py
 salt/modules/timezone.py
 salt/modules/tls.py
-salt/modules/transactional_update.py
 salt/modules/udev.py
 salt/modules/useradd.py
 salt/modules/virtualenv_mod.py
@@ -201,7 +186,6 @@ salt/modules/xfs.py
 salt/modules/xml.py
 salt/modules/yaml.py
 salt/modules/yumpkg.py
-salt/modules/zfs.py
 salt/output/highstate.py
 salt/output/json_out.py
 salt/output/key.py
@@ -223,6 +207,7 @@ salt/renderers/mako.py
 salt/renderers/msgpack.py
 salt/renderers/nacl.py
 salt/renderers/py.py
+salt/renderers/pyobjects.py
 salt/renderers/stateconf.py
 salt/renderers/tomlmod.py
 salt/renderers/yaml.py
@@ -278,9 +263,7 @@ salt/states/apache_module.py
 salt/states/apache_site.py
 salt/states/archive.py
 salt/states/at.py
-salt/states/aws_sqs.py
 salt/states/beacon.py
-salt/states/bower.py
 salt/states/cloud.py
 salt/states/cmd.py
 salt/states/cron.py
@@ -298,9 +281,7 @@ salt/states/group.py
 salt/states/highstate_doc.py
 salt/states/host.py
 salt/states/http.py
-salt/states/idem.py
 salt/states/ini_manage.py
-salt/states/ipmi.py
 salt/states/ipset.py
 salt/states/iptables.py
 salt/states/keyboard.py
@@ -308,7 +289,6 @@ salt/states/linux_acl.py
 salt/states/logrotate.py
 salt/states/loop.py
 salt/states/lvm.py
-salt/states/makeconf.py
 salt/states/mdadm_raid.py
 salt/states/module.py
 salt/states/mount.py
@@ -318,7 +298,6 @@ salt/states/netntp.py
 salt/states/netsnmp.py
 salt/states/netusers.py
 salt/states/network.py
-salt/states/npm.py
 salt/states/ntp.py
 salt/states/pip_state.py
 salt/states/pkg.py
@@ -332,7 +311,6 @@ salt/states/saltutil.py
 salt/states/schedule.py
 salt/states/selinux.py
 salt/states/service.py
-salt/states/smtp.py
 salt/states/ssh_auth.py
 salt/states/ssh_known_hosts.py
 salt/states/stateconf.py
@@ -348,3 +326,6 @@ salt/states/uptime.py
 salt/states/user.py
 salt/states/x509.py
 salt/states/x509_v2.py
+tests/pytests/functional/modules/state/test_pyobjects_renderer.py
+tests/pytests/unit/utils/test_pyobjects.py
+tests/unit/utils/test_pyobjects.py
