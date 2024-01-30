@@ -23,6 +23,7 @@ def cleanup_duplicates(ctx: Context):
     core_ext_modules_path = REPO_ROOT / "core-ext-modules.txt"
     core_modules_path = REPO_ROOT / "core-modules.txt"
     delete_modules_path = REPO_ROOT / "delete-modules.txt"
+    test_support_path = REPO_ROOT / "test-support.txt"
     community_modules = community_modules_path.read_text().splitlines()
     initial_community_modules = community_modules[:]
     core_ext_modules = core_ext_modules_path.read_text().splitlines()
@@ -31,8 +32,14 @@ def cleanup_duplicates(ctx: Context):
     initial_core_modules = core_modules[:]
     delete_modules = delete_modules_path.read_text().splitlines()
     initial_delete_modules = delete_modules[:]
+    test_support_modules = test_support_path.read_text().splitlines()
+    initial_test_support_modules = test_support_modules[:]
 
     for mod in delete_modules:
+        for modlist in (core_modules, core_ext_modules, community_modules, test_support_modules):
+            if mod in modlist:
+                modlist.remove(mod)
+    for mod in test_support_modules:
         for modlist in (core_modules, core_ext_modules, community_modules):
             if mod in modlist:
                 modlist.remove(mod)
@@ -41,13 +48,14 @@ def cleanup_duplicates(ctx: Context):
             if mod in modlist:
                 modlist.remove(mod)
     for mod in core_ext_modules:
-        if mod in core_modules:
+        if mod in test_support_modules:
             core_modules.remove(mod)
 
     delete_modules = sorted(set(m for m in delete_modules if m), key=str.casefold)
     community_modules = sorted(set(m for m in community_modules if m), key=str.casefold)
     core_ext_modules = sorted(set(m for m in core_ext_modules if m), key=str.casefold)
     core_modules = sorted(set(m for m in core_modules if m), key=str.casefold)
+    test_support_modules = sorted(set(m for m in test_support_modules if m), key=str.casefold)
     if delete_modules != initial_delete_modules:
         ctx.info(f"Writing updated {delete_modules_path} ...")
         delete_modules_path.write_text("\n".join(delete_modules) + "\n")
@@ -60,3 +68,6 @@ def cleanup_duplicates(ctx: Context):
     if core_modules != initial_core_modules:
         ctx.info(f"Writing updated {core_modules_path} ...")
         core_modules_path.write_text("\n".join(core_modules) + "\n")
+    if test_support_modules != initial_test_support_modules:
+        ctx.info(f"Writing updated {test_support_path} ...")
+        test_support_path.write_text("\n".join(test_support_modules) + "\n")
