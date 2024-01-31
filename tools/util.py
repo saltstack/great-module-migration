@@ -1,43 +1,41 @@
-import os
 import pathlib
-import io
+
+from ptscripts import Context
+from ptscripts import command_group
+
 from .precommit import REPO_ROOT
 
-from ptscripts import command_group
-from ptscripts import Context
-
 KINDMAP = {
-  "modules": "module",
-  "states": "state",
-  "runners": "runner",
-  "grains": "grain",
-  "utils": "util",
-  "netapi": "netapi",
-  "auth": "auth",
-  "beacons": "beacon",
-  "returners": "returner",
-  "cloud": "cloud",
-  "engines": "engine",
-  "sdb": "sdb",
-  "renderers": "renderer",
-  "pillar": "pillar",
-  "proxy": "proxy",
-  "executors": "executor",
-  "executors": "executor",
-  "log_handlers": "log_handler",
-  "output": "output",
-  "fileserver": "fileserver",
-  "queues": "queue",
-  "roster": "roster",
-  "serializers" : "serializer",
+    "modules": "module",
+    "states": "state",
+    "runners": "runner",
+    "grains": "grain",
+    "utils": "util",
+    "netapi": "netapi",
+    "auth": "auth",
+    "beacons": "beacon",
+    "returners": "returner",
+    "cloud": "cloud",
+    "engines": "engine",
+    "sdb": "sdb",
+    "renderers": "renderer",
+    "pillar": "pillar",
+    "proxy": "proxy",
+    "executors": "executor",
+    "log_handlers": "log_handler",
+    "output": "output",
+    "fileserver": "fileserver",
+    "queues": "queue",
+    "roster": "roster",
+    "serializers": "serializer",
 }
 
 
 REVERSE_KINDMAP = {KINDMAP[k]: k for k in KINDMAP}
 UNKNOWN = "UNKNOWN"
 
-class Module:
 
+class Module:
     def __init__(self, path):
         self.path = pathlib.Path(path)
 
@@ -71,8 +69,11 @@ class Module:
             return True
         return False
 
+
 cgroup = command_group(
-    name="util", help="Pre-Commit Related Commands", description=__doc__,
+    name="util",
+    help="Pre-Commit Related Commands",
+    description=__doc__,
 )
 
 
@@ -85,7 +86,7 @@ cgroup = command_group(
         "modules": {
             "help": "A file containing a list of modules.",
         },
-    }
+    },
 )
 def find_tests(ctx: Context, saltroot: pathlib.Path, modules: pathlib.Path):
     """
@@ -100,18 +101,13 @@ def find_tests(ctx: Context, saltroot: pathlib.Path, modules: pathlib.Path):
         ctx.error("saltroot should be a directory")
         ctx.exit(1)
     supporting = (REPO_ROOT / "test-support.txt").read_text().splitlines()
-    modules = [
-        Module(_) for _ in modules.read_text().splitlines()
-    ]
+    modules = [Module(_) for _ in modules.read_text().splitlines()]
     tests = []
     testsdir = saltroot / "tests"
-    for root, dirs, files in os.walk(testsdir):
-        for file in files:
-            if pathlib.Path(file).suffix != ".py":
-                continue
-            p = (pathlib.Path(root) / file).relative_to(saltroot)
-            tmod = Module(p)
-            tests.append(tmod)
+    for path in testsdir.rglob("*.py"):
+        rpath = path.relative_to(saltroot)
+        tmod = Module(rpath)
+        tests.append(tmod)
 
     found = []
     module_paths = [a.path for a in modules]
@@ -123,11 +119,8 @@ def find_tests(ctx: Context, saltroot: pathlib.Path, modules: pathlib.Path):
                 continue
             if str(tmod.path) in supporting:
                 continue
-            if tmod.kind == mod.kind:
-                if tmod.ident == mod.ident:
-                    found.append(tmod)
-                elif mod.ident in tmod.parts:
-                    found.append(tmod)
-    found = sorted(found, key= lambda x : x.path)
+            if tmod.kind == mod.kind and (tmod.ident == mod.ident or mod.ident in tmod.parts):
+                found.append(tmod)
+    found = sorted(found, key=lambda x: x.path)
     for test in found:
-        print(test.path)
+        ctx.info(f"Found '{test.path}'")
