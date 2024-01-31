@@ -123,4 +123,4 @@ def find_tests(ctx: Context, saltroot: pathlib.Path, modules: pathlib.Path):
                 found.append(tmod)
     found = sorted(found, key=lambda x: x.path)
     for test in found:
-        ctx.info(f"Found '{test.path}'")
+        print(f"{test}")
