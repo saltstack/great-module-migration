@@ -2,13 +2,16 @@
 These commands, and sub-commands, are used by pre-commit.
 """
 import pathlib
-from ptscripts import command_group
+
 from ptscripts import Context
+from ptscripts import command_group
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 cgroup = command_group(
-    name="pre-commit", help="Pre-Commit Related Commands", description=__doc__,
+    name="pre-commit",
+    help="Pre-Commit Related Commands",
+    description=__doc__,
 )
 
 
@@ -51,11 +54,11 @@ def cleanup_duplicates(ctx: Context):
         if mod in test_support_modules:
             core_modules.remove(mod)
 
-    delete_modules = sorted(set(m for m in delete_modules if m), key=str.casefold)
-    community_modules = sorted(set(m for m in community_modules if m), key=str.casefold)
-    core_ext_modules = sorted(set(m for m in core_ext_modules if m), key=str.casefold)
-    core_modules = sorted(set(m for m in core_modules if m), key=str.casefold)
-    test_support_modules = sorted(set(m for m in test_support_modules if m), key=str.casefold)
+    delete_modules = sorted({m for m in delete_modules if m}, key=str.casefold)
+    community_modules = sorted({m for m in community_modules if m}, key=str.casefold)
+    core_ext_modules = sorted({m for m in core_ext_modules if m}, key=str.casefold)
+    core_modules = sorted({m for m in core_modules if m}, key=str.casefold)
+    test_support_modules = sorted({m for m in test_support_modules if m}, key=str.casefold)
     if delete_modules != initial_delete_modules:
         ctx.info(f"Writing updated {delete_modules_path} ...")
         delete_modules_path.write_text("\n".join(delete_modules) + "\n")

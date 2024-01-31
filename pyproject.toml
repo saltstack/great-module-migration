@@ -1,0 +1,87 @@
+[tool.ruff]
+line-length = 120
+select = [
+  "ALL",
+]
+unfixable = [
+  "PT023",  # (pytest-incorrect-mark-parentheses-style)
+]
+show-fixes = true
+show-source = true
+target-version = "py37"
+respect-gitignore = true
+src = [
+  "src",
+  "test"
+]
+extend-exclude = [
+  ".nox",
+  "examples",
+]
+extend-include = [
+  "setup.py",
+  "noxfile.py",
+  "src/**/*.pyi",
+]
+ignore-init-module-imports = true
+builtins = [
+  "__opts__",
+  "__salt__",
+  "__context__",
+  "__grains__",
+  "__pillar__",
+  "__salt_system_encoding__",
+]
+# Group violations by containing file.
+ignore = [
+  "ANN",     # annotations
+  "PTH",     # Replace with pathlib.Path
+  "D107",    # Missing docstring in `__init__`
+  "D200",    # Reformat to one line
+  "D212",    # Remove whitespace after opening quotes
+  "COM",     # flake8-commas - Black takes care of this
+  "ERA",     # eradicate
+  "SIM108",  # Use ternary operator `A = X if Y else Z` instead of `if`-`else`-block
+  "PERF203", # `try`-`except` within a loop incurs performance overhead"
+  "PERF401", # Use a list comprehension to create a transformed list
+  "PERF402", # Use `list` or `list.copy` to create a copy of a list
+  "FBT001",  # Boolean positional arg in function definition
+  "FBT002",  # Boolean default value in function definition
+  "FBT003",  # Boolean positional value in function call
+  "PT001",   # use @pytest.fixture() over @pytest.fixture
+  "PT023",   # Use `@pytest.mark.<xyz>()` over `@pytest.mark.<xyz>`
+]
+
+[tool.ruff.per-file-ignores]
+"tools/**/*.py" = [
+  "D100",     # Missing docstring in public module
+  "D101",     # Missing docstring in public class
+  "D102",     # Missing docstring in public method
+  "D104",     # Missing docstring in public package
+  "D105",     # Missing docstring in magic method
+]
+[tool.ruff.pydocstyle]
+# Use Google-style docstrings.
+convention = "google"
+
+[tool.ruff.isort]
+combine-as-imports = false
+force-single-line = true
+known-first-party = ["src"]
+forced-separate = ["tests"]
+
+[tool.ruff.flake8-quotes]
+docstring-quotes = "double"
+
+[tool.ruff.mccabe]
+max-complexity = 25
+
+[tool.ruff.pylint]
+max-args = 10
+max-branches = 35
+max-returns = 8
+
+[tool.ruff.pep8-naming]
+ignore-names = [
+  "__virtual__",
+]
