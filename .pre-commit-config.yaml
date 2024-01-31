@@ -18,3 +18,25 @@ repos:
         args:
           - pre-commit
           - cleanup-duplicates
+
+  # ----- Formatting ------------------------------------------------------------------------------------------------>
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: "v0.0.280"
+    hooks:
+      - id: ruff
+        args:
+          - --fix
+        exclude: (.pre-commit-hooks/.*|docs/.*)\.py
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v3.9.0
+    hooks:
+      - id: pyupgrade
+        name: Rewrite Code to be Py3.9+
+        args: [--py39-plus]
+
+  - repo: https://github.com/psf/black
+    rev: 23.7.0
+    hooks:
+      - id: black
+        args: [-l 100]
+  # <---- Formatting -------------------------------------------------------------------------------------------------
