@@ -716,7 +716,6 @@ salt/states/vault.py
 salt/states/vbox_guest.py
 salt/states/victorops.py
 salt/states/virt.py
-salt/states/virtualenv_mod.py
 salt/states/webutil.py
 salt/states/wordpress.py
 salt/states/xml.py
