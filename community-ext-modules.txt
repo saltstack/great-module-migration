@@ -395,7 +395,6 @@ salt/pillar/redismod.py
 salt/pillar/rethinkdb_pillar.py
 salt/pillar/s3.py
 salt/pillar/saltclass.py
-salt/pillar/sql_base.py
 salt/pillar/sqlcipher.py
 salt/pillar/sqlite3.py
 salt/pillar/stack.py
