@@ -135,6 +135,7 @@ salt/modules/zonecfg.py
 salt/output/progress.py
 salt/output/table_out.py
 salt/pillar/postgres.py
+salt/pillar/sql_base.py
 salt/returners/pgjsonb.py
 salt/returners/postgres.py
 salt/returners/postgres_local_cache.py
