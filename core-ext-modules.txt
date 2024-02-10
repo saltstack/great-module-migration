@@ -19,8 +19,6 @@ salt/modules/chocolatey.py
 salt/modules/chronos.py
 salt/modules/cryptdev.py
 salt/modules/debuild_pkgbuild.py
-salt/modules/dockercompose.py
-salt/modules/dockermod.py
 salt/modules/etcd_mod.py
 salt/modules/idem.py
 salt/modules/incron.py
@@ -207,7 +205,6 @@ tests/integration/states/test_rabbitmq_vhost.py
 tests/integration/states/test_reg.py
 tests/pytests/functional/modules/test_aliases.py
 tests/pytests/functional/modules/test_ansiblegate.py
-tests/pytests/functional/modules/test_dockermod.py
 tests/pytests/functional/modules/test_etcd_mod.py
 tests/pytests/functional/modules/test_mac_assistive.py
 tests/pytests/functional/modules/test_mac_brew_pkg.py
