@@ -161,8 +161,6 @@ salt/modules/dnsmasq.py
 salt/modules/drac.py
 salt/modules/dracr.py
 salt/modules/drbd.py
-salt/modules/dummyproxy_pkg.py
-salt/modules/dummyproxy_service.py
 salt/modules/ebuildpkg.py
 salt/modules/eix.py
 salt/modules/elasticsearch.py
@@ -415,7 +413,6 @@ salt/proxy/chronos.py
 salt/proxy/cimc.py
 salt/proxy/cisconso.py
 salt/proxy/docker.py
-salt/proxy/dummy.py
 salt/proxy/esxcluster.py
 salt/proxy/esxdatacenter.py
 salt/proxy/esxi.py
