@@ -158,6 +158,8 @@ salt/modules/deb_apache.py
 salt/modules/deb_postgres.py
 salt/modules/djangomod.py
 salt/modules/dnsmasq.py
+salt/modules/dockercompose.py
+salt/modules/dockermod.py
 salt/modules/drac.py
 salt/modules/dracr.py
 salt/modules/drbd.py
@@ -203,6 +205,14 @@ salt/modules/influxdb08mod.py
 salt/modules/influxdbmod.py
 salt/modules/infoblox.py
 salt/modules/inspectlib
+salt/modules/inspectlib/__init__.py
+salt/modules/inspectlib/collector.py
+salt/modules/inspectlib/dbhandle.py
+salt/modules/inspectlib/entities.py
+salt/modules/inspectlib/exceptions.py
+salt/modules/inspectlib/fsdb.py
+salt/modules/inspectlib/kiwiproc.py
+salt/modules/inspectlib/query.py
 salt/modules/inspector.py
 salt/modules/introspect.py
 salt/modules/ipmi.py
@@ -710,6 +720,7 @@ salt/states/telemetry_alert.py
 salt/states/testinframod.py
 salt/states/tomcat.py
 salt/states/trafficserver.py
+salt/states/tuned.py
 salt/states/vagrant.py
 salt/states/vault.py
 salt/states/vbox_guest.py
@@ -748,6 +759,7 @@ tests/integration/cloud/clouds/test_tencentcloud.py
 tests/integration/cloud/clouds/test_virtualbox.py
 tests/integration/cloud/clouds/test_vmware.py
 tests/integration/cloud/clouds/test_vultrpy.py
+tests/integration/externalapi/test_venafiapi.py
 tests/integration/modules/test_boto_iam.py
 tests/integration/modules/test_boto_sns.py
 tests/integration/modules/test_gem.py
@@ -770,6 +782,7 @@ tests/integration/states/test_mysql_grants.py
 tests/integration/states/test_supervisord.py
 tests/pytests/functional/fileserver/hgfs/test_hgfs.py
 tests/pytests/functional/log_handlers/test_logstash_mod.py
+tests/pytests/functional/modules/test_dockermod.py
 tests/pytests/functional/modules/test_freezer.py
 tests/pytests/functional/modules/test_mongodb.py
 tests/pytests/functional/modules/test_nilrt_ip.py
@@ -783,6 +796,7 @@ tests/pytests/functional/returners/test_etcd_return.py
 tests/pytests/functional/sdb/test_etcd_db.py
 tests/pytests/functional/states/test_docker_container.py
 tests/pytests/functional/states/test_docker_network.py
+tests/pytests/functional/states/test_mysql.py
 tests/pytests/functional/states/test_npm.py
 tests/pytests/functional/states/test_svn.py
 tests/pytests/functional/states/test_virtualenv_mod.py
@@ -793,6 +807,7 @@ tests/pytests/integration/runners/test_nacl.py
 tests/pytests/integration/runners/test_vault.py
 tests/pytests/integration/sdb/test_etcd_db.py
 tests/pytests/integration/sdb/test_vault.py
+tests/pytests/integration/ssh/test_terraform.py
 tests/pytests/unit/beacons/test_adb.py
 tests/pytests/unit/beacons/test_avahi_announce.py
 tests/pytests/unit/beacons/test_bonjour_announce.py
@@ -839,6 +854,8 @@ tests/pytests/unit/grains/test_napalm.py
 tests/pytests/unit/grains/test_nvme.py
 tests/pytests/unit/grains/test_smartos.py
 tests/pytests/unit/log_handlers/test_sentry_mod.py
+tests/pytests/unit/modules/dockermod/test_module.py
+tests/pytests/unit/modules/dockermod/test_trans_tar.py
 tests/pytests/unit/modules/test_acme.py
 tests/pytests/unit/modules/test_augeas_cfg.py
 tests/pytests/unit/modules/test_bigip.py
@@ -948,6 +965,8 @@ tests/pytests/unit/modules/test_xapi_virt.py
 tests/pytests/unit/modules/test_zabbix.py
 tests/pytests/unit/modules/test_zenoss.py
 tests/pytests/unit/modules/test_zfs.py
+tests/pytests/unit/modules/test_zfs_solaris10.py
+tests/pytests/unit/modules/test_zfs_solaris11.py
 tests/pytests/unit/modules/test_znc.py
 tests/pytests/unit/modules/test_zpool.py
 tests/pytests/unit/modules/test_zypperpkg.py
@@ -959,6 +978,8 @@ tests/pytests/unit/pillar/test_consul_pillar.py
 tests/pytests/unit/pillar/test_csvpillar.py
 tests/pytests/unit/pillar/test_etcd_pillar.py
 tests/pytests/unit/pillar/test_extra_minion_data_in_pillar.py
+tests/pytests/unit/pillar/test_http_json_pillar.py
+tests/pytests/unit/pillar/test_http_yaml_pillar.py
 tests/pytests/unit/pillar/test_mongo.py
 tests/pytests/unit/pillar/test_mysql.py
 tests/pytests/unit/pillar/test_nacl.py
@@ -995,6 +1016,7 @@ tests/pytests/unit/returners/test_redis_return.py
 tests/pytests/unit/returners/test_sentry_return.py
 tests/pytests/unit/returners/test_slack_webhook_return.py
 tests/pytests/unit/returners/test_smtp_return.py
+tests/pytests/unit/returners/test_splunk_return.py
 tests/pytests/unit/returners/test_telegram_return.py
 tests/pytests/unit/roster/test_clustershell.py
 tests/pytests/unit/roster/test_terraform.py
@@ -1006,6 +1028,10 @@ tests/pytests/unit/runners/vault/test_token_auth_deprecated.py
 tests/pytests/unit/runners/vault/test_vault.py
 tests/pytests/unit/sdb/test_etcd_db.py
 tests/pytests/unit/sdb/test_vault.py
+tests/pytests/unit/states/mysql/test_database.py
+tests/pytests/unit/states/mysql/test_grants.py
+tests/pytests/unit/states/mysql/test_query.py
+tests/pytests/unit/states/mysql/test_user.py
 tests/pytests/unit/states/test_acme.py
 tests/pytests/unit/states/test_alias.py
 tests/pytests/unit/states/test_alternatives.py
@@ -1117,6 +1143,10 @@ tests/pytests/unit/states/test_zk_concurrency.py
 tests/pytests/unit/states/test_zpool.py
 tests/pytests/unit/states/virt/test_domain.py
 tests/pytests/unit/states/virt/test_network.py
+tests/pytests/unit/states/zabbix/test_action.py
+tests/pytests/unit/states/zabbix/test_host.py
+tests/pytests/unit/states/zabbix/test_template.py
+tests/pytests/unit/states/zabbix/test_valuemap.py
 tests/unit/modules/inspectlib/test_collector.py
 tests/unit/modules/inspectlib/test_fsdb.py
 tests/unit/modules/test_boto3_elasticsearch.py
@@ -1172,3 +1202,6 @@ tests/unit/states/test_esxi.py
 tests/unit/states/test_heat.py
 tests/unit/states/test_virt.py
 tests/unit/states/test_zcbuildout.py
+tests/unit/utils/test_dockermod.py
+tests/unit/utils/test_pydsl.py
+tests/unit/utils/test_sdb.py

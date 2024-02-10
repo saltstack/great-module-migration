@@ -334,7 +334,6 @@ salt/states/syslog_ng.py
 salt/states/test.py
 salt/states/timezone.py
 salt/states/tls.py
-salt/states/tuned.py
 salt/states/uptime.py
 salt/states/user.py
 salt/states/virtualenv_mod.py
@@ -667,7 +666,6 @@ tests/pytests/unit/states/file/test_retention_schedule.py
 tests/pytests/unit/states/file/test_selinux.py
 tests/pytests/unit/states/file/test_symlink.py
 tests/pytests/unit/states/file/test_tidied.py
-tests/pytests/unit/states/mysql/test_user.py
 tests/pytests/unit/states/postgresql/test_group.py
 tests/pytests/unit/states/postgresql/test_user.py
 tests/pytests/unit/states/saltmod/test_function.py
@@ -722,7 +720,6 @@ tests/pytests/unit/states/test_sysfs.py
 tests/pytests/unit/states/test_test.py
 tests/pytests/unit/states/test_timezone.py
 tests/pytests/unit/states/test_user.py
-tests/pytests/unit/states/zabbix/test_host.py
 tests/unit/modules/test_cron.py
 tests/unit/modules/test_hosts.py
 tests/unit/modules/test_linux_acl.py
