@@ -366,8 +366,6 @@ salt/output/overstatestage.py
 salt/output/pony.py
 salt/output/profile.py
 salt/output/virt_query.py
-salt/pillar/cmd_json.py
-salt/pillar/cmd_yaml.py
 salt/pillar/cmd_yamlex.py
 salt/pillar/cobbler.py
 salt/pillar/confidant.py
@@ -377,7 +375,6 @@ salt/pillar/digicert.py
 salt/pillar/django_orm.py
 salt/pillar/ec2_pillar.py
 salt/pillar/etcd_pillar.py
-salt/pillar/extra_minion_data_in_pillar.py
 salt/pillar/foreman.py
 salt/pillar/hg_pillar.py
 salt/pillar/hiera.py
