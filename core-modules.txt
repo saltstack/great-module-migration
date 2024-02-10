@@ -83,6 +83,8 @@ salt/modules/dig.py
 salt/modules/disk.py
 salt/modules/dnsutil.py
 salt/modules/dpkg_lowpkg.py
+salt/modules/dummyproxy_pkg.py
+salt/modules/dummyproxy_service.py
 salt/modules/environ.py
 salt/modules/ethtool.py
 salt/modules/event.py
@@ -200,6 +202,7 @@ salt/pillar/git_pillar.py
 salt/pillar/gpg.py
 salt/pillar/nodegroups.py
 salt/proxy/deltaproxy.py
+salt/proxy/dummy.py
 salt/renderers/gpg.py
 salt/renderers/jinja.py
 salt/renderers/json.py
