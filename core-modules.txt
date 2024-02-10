@@ -1,3 +1,6 @@
+salt/pillar/extra_minion_data_in_pillar.py
+salt/pillar/cmd_json.py
+salt/pillar/cmd_yaml.py
 salt/auth/auto.py
 salt/auth/file.py
 salt/auth/pam.py
