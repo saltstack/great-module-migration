@@ -504,7 +504,6 @@ salt/sdb/rest.py
 salt/sdb/sqlite3.py
 salt/sdb/tism.py
 salt/sdb/vault.py
-salt/serializers/configparser.py
 salt/serializers/keyvalue.py
 salt/serializers/plist.py
 salt/serializers/python.py
