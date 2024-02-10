@@ -1,6 +1,3 @@
-salt/pillar/extra_minion_data_in_pillar.py
-salt/pillar/cmd_json.py
-salt/pillar/cmd_yaml.py
 salt/auth/auto.py
 salt/auth/file.py
 salt/auth/pam.py
@@ -200,6 +197,9 @@ salt/output/pprint_out.py
 salt/output/raw.py
 salt/output/txt.py
 salt/output/yaml_out.py
+salt/pillar/cmd_json.py
+salt/pillar/cmd_yaml.py
+salt/pillar/extra_minion_data_in_pillar.py
 salt/pillar/file_tree.py
 salt/pillar/git_pillar.py
 salt/pillar/gpg.py
@@ -260,6 +260,7 @@ salt/runners/test.py
 salt/runners/winrepo.py
 salt/sdb/env.py
 salt/sdb/yaml.py
+salt/serializers/configparser.py
 salt/serializers/json.py
 salt/serializers/msgpack.py
 salt/serializers/tomlmod.py
