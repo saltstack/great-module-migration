@@ -58,7 +58,6 @@ salt/matchers/pillar_exact_match.py
 salt/matchers/pillar_match.py
 salt/matchers/pillar_pcre_match.py
 salt/matchers/range_match.py
-salt/modules/apache.py
 salt/modules/apf.py
 salt/modules/aptpkg.py
 salt/modules/archive.py
@@ -266,10 +265,6 @@ salt/serializers/msgpack.py
 salt/serializers/tomlmod.py
 salt/serializers/yaml.py
 salt/serializers/yamlex.py
-salt/states/apache.py
-salt/states/apache_conf.py
-salt/states/apache_module.py
-salt/states/apache_site.py
 salt/states/archive.py
 salt/states/at.py
 salt/states/beacon.py
@@ -521,7 +516,6 @@ tests/pytests/unit/modules/napalm/test_network.py
 tests/pytests/unit/modules/state/test_initial_pillar.py
 tests/pytests/unit/modules/state/test_state.py
 tests/pytests/unit/modules/state/test_top_file_merge.py
-tests/pytests/unit/modules/test_apache.py
 tests/pytests/unit/modules/test_aptpkg.py
 tests/pytests/unit/modules/test_archive.py
 tests/pytests/unit/modules/test_at.py
@@ -643,10 +637,6 @@ tests/pytests/unit/runners/test_saltutil.py
 tests/pytests/unit/runners/test_state.py
 tests/pytests/unit/runners/test_winrepo.py
 tests/pytests/unit/sdb/test_yaml.py
-tests/pytests/unit/states/apache/test_apache.py
-tests/pytests/unit/states/apache/test_conf.py
-tests/pytests/unit/states/apache/test_module.py
-tests/pytests/unit/states/apache/test_site.py
 tests/pytests/unit/states/file/test__clean_dir.py
 tests/pytests/unit/states/file/test_absent.py
 tests/pytests/unit/states/file/test_comment.py
@@ -666,8 +656,6 @@ tests/pytests/unit/states/file/test_retention_schedule.py
 tests/pytests/unit/states/file/test_selinux.py
 tests/pytests/unit/states/file/test_symlink.py
 tests/pytests/unit/states/file/test_tidied.py
-tests/pytests/unit/states/postgresql/test_group.py
-tests/pytests/unit/states/postgresql/test_user.py
 tests/pytests/unit/states/saltmod/test_function.py
 tests/pytests/unit/states/saltmod/test_parallel_runners.py
 tests/pytests/unit/states/saltmod/test_runner.py
