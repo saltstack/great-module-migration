@@ -113,7 +113,6 @@ tests/pytests/functional/modules/state/requisites/test_use.py
 tests/pytests/functional/modules/state/requisites/test_watch.py
 tests/pytests/functional/modules/state/test_jinja_filters.py
 tests/pytests/functional/modules/state/test_jinja_renderer.py
-tests/pytests/functional/modules/state/test_mako_renderer.py
 tests/pytests/functional/modules/state/test_state.py
 tests/pytests/functional/netapi/__init__.py
 tests/pytests/functional/netapi/conftest.py

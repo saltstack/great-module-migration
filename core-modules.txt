@@ -208,7 +208,6 @@ salt/proxy/dummy.py
 salt/renderers/gpg.py
 salt/renderers/jinja.py
 salt/renderers/json.py
-salt/renderers/mako.py
 salt/renderers/msgpack.py
 salt/renderers/nacl.py
 salt/renderers/py.py
@@ -492,6 +491,7 @@ tests/pytests/unit/beacons/test_swapusage.py
 tests/pytests/unit/beacons/test_watchdog.py
 tests/pytests/unit/cloud/clouds/test_saltify.py
 tests/pytests/unit/engines/test_script.py
+tests/pytests/unit/engines/test_stalekey.py
 tests/pytests/unit/executors/test_splay.py
 tests/pytests/unit/fileserver/gitfs/test_gitfs.py
 tests/pytests/unit/fileserver/gitfs/test_gitfs_config.py

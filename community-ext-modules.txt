@@ -828,6 +828,7 @@ tests/integration/states/test_mysql_grants.py
 tests/integration/states/test_supervisord.py
 tests/pytests/functional/fileserver/hgfs/test_hgfs.py
 tests/pytests/functional/log_handlers/test_logstash_mod.py
+tests/pytests/functional/modules/state/test_mako_renderer.py
 tests/pytests/functional/modules/test_dockermod.py
 tests/pytests/functional/modules/test_freezer.py
 tests/pytests/functional/modules/test_mongodb.py
@@ -887,7 +888,6 @@ tests/pytests/unit/engines/test_libvirt_events.py
 tests/pytests/unit/engines/test_slack.py
 tests/pytests/unit/engines/test_slack_bolt_engine.py
 tests/pytests/unit/engines/test_sqs_events.py
-tests/pytests/unit/engines/test_stalekey.py
 tests/pytests/unit/fileserver/test_s3fs.py
 tests/pytests/unit/fileserver/test_svnfs.py
 tests/pytests/unit/grains/test_esxi.py

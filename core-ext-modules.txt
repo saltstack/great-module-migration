@@ -106,6 +106,7 @@ salt/modules/zoneadm.py
 salt/modules/zonecfg.py
 salt/output/table_out.py
 salt/proxy/napalm.py
+salt/renderers/mako.py
 salt/states/ansiblegate.py
 salt/states/chocolatey.py
 salt/states/idem.py
